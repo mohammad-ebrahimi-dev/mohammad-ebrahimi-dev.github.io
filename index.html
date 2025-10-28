@@ -6,28 +6,177 @@
     <title>محمد ابراهیمی | .NET Developer</title>
     <style>
         body {
-            font-family: sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: #f4f4f9;
-            text-align: center;
-            padding: 50px;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
-        h1 { color: #2b2d42; }
-        p { color: #555; }
-        a {
+
+        header {
+            background: #2b2d42;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin-top: 10px;
+            color: #ddd;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: #2b2d42;
+        }
+
+        section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        section ul li {
+            margin-bottom: 8px;
+        }
+
+        section ul li ul {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-left: 15px;
+            list-style: disc;
+        }
+
+        a.button {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 15px;
             padding: 10px 20px;
             background: #2b2d42;
             color: white;
             text-decoration: none;
             border-radius: 8px;
+            transition: background 0.3s;
         }
-        a:hover { background: #3b3f5c; }
+
+        a.button:hover {
+            background: #3b3f5c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>سلام 👋 من محمد ابراهیمی‌ام</h1>
-    <p>برنامه‌نویس .NET و علاقه‌مند به طراحی سیستم‌های نرم‌افزاری و ربات‌های تلگرام.</p>
-<a href="https://github.com/mohammad-ebrahimi-dev" target="_blank">
-مشاهده گیت هاب من</a></body>
+    <header>
+        <h1>سلام 👋 من محمد امین ابراهیمی‌ام</h1>
+        <p>برنامه‌نویس Backend و علاقه‌مند به توسعه وب و طراحی سیستم‌های نرم‌افزاری</p>
+        <a class="button" href="https://github.com/mohammad-ebrahimi-dev" target="_blank">مشاهده GitHub من</a>
+    </header>
+
+    <main>
+        <section>
+            <h2>تجربه کاری</h2>
+            <ul>
+                <li>یاس‌های ارغوانی | 1404/7/14 - اکنون | برنامه نویس Backend
+                    <ul>
+                        <li>کار روی پروژه‌های بانکی</li>
+                    </ul>
+                </li>
+                <li>تهران تندیس | 1403/10/29 - 1404/5/20 | برنامه نویس Backend</li>
+                <li>فیدار | 1403/1/20 - 1403/3/30 | برنامه نویس Backend</li>
+                <li>امن افزار گستر شریف | 1402/6/1 - 1403/1/20 | برنامه نویس Backend</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>پروژه‌ها</h2>
+            <ul>
+                <li>پشتیبانی و رفع خطا نرم‌افزار سامانه امور داروخانه</li>
+                <li>پروژه SSO</li>
+                <li>پروژه FileManager</li>
+                <li>پروژه BPMS</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>مهارت‌ها</h2>
+            <ul>
+                <li>زبان‌ها: C#, Python</li>
+                <li>فریمورک‌ها: ASP.NET Core, Django</li>
+                <li>پلتفرم: .NET Core</li>
+                <li>پایگاه داده: SQL Server, PostgreSQL, Redis</li>
+                <li>معماری‌ها: Clean, Microservice</li>
+                <li>Design Pattern: CQRS, SOLID, DRY</li>
+                <li>ORM: EFCore, Dapper</li>
+                <li>سایر: Authentication & Authorization, Elastic, Swagger UI, Stimulsoft, Docker</li>
+                <li>سیستم عامل: Linux, Windows</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>زبان‌ها</h2>
+            <ul>
+                <li>فارسی: Native</li>
+                <li>انگلیسی: Intermediate</li>
+                <li>روسی: Beginner</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>تحصیلات و مدارک</h2>
+            <ul>
+                <li>دانشجوی مهندسی کامپیوتر</li>
+                <li>مدارک: <a href="https://faradars.org/verify/3FEAEC7D?lang=en" target="_blank">فارادرس</a></li>
+                <li>Git: GitHub / GitLab</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>شبکه‌های اجتماعی</h2>
+            <ul>
+                <li>GitHub: <a href="https://github.com/Janusae" target="_blank">https://github.com/Janusae</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/mohammad-ebrahimi-337769284/" target="_blank">https://www.linkedin.com/in/mohammad-ebrahimi-337769284/</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>درباره من</h2>
+            <p>من محمد امین ابراهیمی، برنامه‌نویس جونیور .NET با انگیزه و اشتیاق بالا هستم که آماده‌ام با تمام توانم وارد دنیای توسعه وب بشم و پروژه‌های واقعی رو به مرحله اجرا برسونم. با تجربه کار روی بک‌اند با فریم‌ورک‌های .NET و Django درک خوبی از ساختارها، منطق و معماری پروژه‌های وب دارم و همیشه دنبال راه‌حل‌های بهینه و نوآورانه می‌گردم.  
+            همیشه آماده‌ام چالش‌های جدید را با انعطاف‌پذیری و انگیزه بالا بپذیرم. روحیه کار تیمی، همکاری مؤثر و علاقه به رشد فردی، از عوامل کلیدی پیشرفت من تا امروز بوده‌اند.</p>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 محمد ابراهیمی
+    </footer>
+</body>
 </html>
