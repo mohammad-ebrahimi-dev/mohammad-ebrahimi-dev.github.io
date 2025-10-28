@@ -5,98 +5,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>محمد ابراهیمی | .NET Developer</title>
     <style>
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: #f4f4f9;
-        color: #333;
-        margin: 0;
-        padding: 0;
-        direction: rtl;
-        text-align: right;
-    }
-
-    header {
-        background: #2b2d42;
-        color: white;
-        padding: 40px 20px;
-        text-align: center;
-    }
-
-    header h1 {
-        margin: 0;
-        font-size: 2.5em;
-    }
-
-    header p {
-        font-size: 1.1em;
-        margin-top: 10px;
-        color: #ddd;
-    }
-
-    main {
-        max-width: 900px;
-        margin: 40px auto;
-        padding: 0 20px;
-    }
-
-    section {
-        background: white;
-        padding: 20px 30px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    }
-
-    section h2 {
-        margin-top: 0;
-        color: #2b2d42;
-    }
-
-    section ul {
-        list-style: none;
-        padding-left: 0;
-    }
-
-    section ul li {
-        margin-bottom: 8px;
-    }
-
-    section ul li ul {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        padding-left: 15px;
-        list-style: disc;
-    }
-
-    a.button {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 10px 20px;
-        background: #2b2d42;
-        color: white;
-        text-decoration: none;
-        border-radius: 8px;
-        transition: background 0.3s;
-    }
-
-    a.button:hover {
-        background: #3b3f5c;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        color: #555;
-        font-size: 0.9em;
-    }
-
-    @media (max-width: 600px) {
-        header h1 {
-            font-size: 2em;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: right;
         }
-    }
-</style>
 
+        header {
+            background: #2b2d42;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin-top: 10px;
+            color: #ddd;
+        }
+
+        nav {
+            background: #3b3f5c;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 5px 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: #2b2d42;
+        }
+
+        section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        section ul li {
+            margin-bottom: 8px;
+        }
+
+        section ul li ul {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding-left: 15px;
+            list-style: disc;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #2b2d42;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        a.button:hover {
+            background: #3b3f5c;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea, form button {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+
+        form button {
+            background: #2b2d42;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        form button:hover {
+            background: #3b3f5c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                margin: 5px 10px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -105,8 +152,17 @@
         <a class="button" href="https://github.com/mohammad-ebrahimi-dev" target="_blank">مشاهده GitHub من</a>
     </header>
 
+    <nav>
+        <a href="#experience">تجربه کاری</a>
+        <a href="#projects">پروژه‌ها</a>
+        <a href="#skills">مهارت‌ها</a>
+        <a href="#languages">زبان‌ها</a>
+        <a href="#education">تحصیلات</a>
+        <a href="#contact">تماس</a>
+    </nav>
+
     <main>
-        <section>
+        <section id="experience">
             <h2>تجربه کاری</h2>
             <ul>
                 <li>یاس‌های ارغوانی | 1404/7/14 - اکنون | برنامه نویس Backend</li>
@@ -116,7 +172,7 @@
             </ul>
         </section>
 
-        <section>
+        <section id="projects">
             <h2>پروژه‌ها</h2>
             <ul>
                 <li>پشتیبانی و رفع خطا نرم‌افزار سامانه امور داروخانه</li>
@@ -124,11 +180,10 @@
                 <li>پروژه FileManager</li>
                 <li>پروژه BPMS</li>
                 <li>کار روی پروژه‌های بانکی</li>
-
             </ul>
         </section>
 
-        <section>
+        <section id="skills">
             <h2>مهارت‌ها</h2>
             <ul>
                 <li>زبان‌ها: C#, Python</li>
@@ -143,7 +198,7 @@
             </ul>
         </section>
 
-        <section>
+        <section id="languages">
             <h2>زبان‌ها</h2>
             <ul>
                 <li>فارسی: Native</li>
@@ -152,32 +207,41 @@
             </ul>
         </section>
 
-        <section>
+        <section id="education">
             <h2>تحصیلات و مدارک</h2>
             <ul>
                 <li>دانشجوی مهندسی کامپیوتر</li>
-                <li>مدارک: </li>
-                <li>Git: GitHub / GitLab : <a href="https://faradars.org/verify/3FEAEC7D?lang=en" target="_blank">Faradars</a></li>
+                <li>مدارک: <a href="https://faradars.org/verify/3FEAEC7D?lang=en" target="_blank">Faradars</a></li>
+                <li>Git: GitHub / GitLab</li>
             </ul>
         </section>
 
-        <section>
-            <h2>شبکه‌های اجتماعی</h2>
+        <section id="contact">
+            <h2>تماس با من</h2>
             <ul>
                 <li>GitHub: <a href="https://github.com/Janusae" target="_blank">https://github.com/Janusae</a></li>
                 <li>LinkedIn: <a href="https://www.linkedin.com/in/mohammad-ebrahimi-337769284/" target="_blank">https://www.linkedin.com/in/mohammad-ebrahimi-337769284</a></li>
+                <li>Email: <a href="mailto:me7445950@gmail.com">me7445950@gmail.com</a></li>
+                <li>Phone: <a href="tel:09912006099">09912006099</a></li>
             </ul>
+
+            <h3>ارسال پیام سریع:</h3>
+            <form action="mailto:me7445950@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="نام شما" required>
+                <input type="email" name="email" placeholder="ایمیل شما" required>
+                <textarea name="message" placeholder="پیام شما" rows="5" required></textarea>
+                <button type="submit">ارسال</button>
+            </form>
         </section>
 
         <section>
-    <h2>درباره من</h2>
-    <p>
-        من محمد امین ابراهیمی، برنامه‌نویس .NET هستم و هم‌اکنون در حوزه توسعه بک‌اند مشغول به کار هستم.  
-        با تجربه عملی در پروژه‌های واقعی با فریم‌ورک‌های .NET و Django، درک خوبی از ساختارها، منطق و معماری پروژه‌های وب دارم و همواره دنبال راه‌حل‌های بهینه و نوآورانه می‌گردم.  
-        علاقه‌مند به یادگیری مداوم، حل چالش‌های جدید و همکاری مؤثر در تیم‌های توسعه هستم و همیشه سعی می‌کنم کیفیت و عملکرد پروژه‌ها را به بالاترین حد برسانم.
-    </p>
-</section>
-
+            <h2>درباره من</h2>
+            <p>
+                من محمد امین ابراهیمی، برنامه‌نویس .NET هستم و هم‌اکنون در حوزه توسعه بک‌اند مشغول به کار هستم.  
+                با تجربه عملی در پروژه‌های واقعی با فریم‌ورک‌های .NET و Django، درک خوبی از ساختارها، منطق و معماری پروژه‌های وب دارم و همواره دنبال راه‌حل‌های بهینه و نوآورانه می‌گردم.  
+                علاقه‌مند به یادگیری مداوم، حل چالش‌های جدید و همکاری مؤثر در تیم‌های توسعه هستم و همیشه سعی می‌کنم کیفیت و عملکرد پروژه‌ها را به بالاترین حد برسانم.
+            </p>
+        </section>
     </main>
 
     <footer>
